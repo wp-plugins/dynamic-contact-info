@@ -4,7 +4,7 @@ Donate link:
 Tags: dynamic , contact, info, upload, sidebar
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 4.1
+Stable tag: 1.1
 License:GPLv2 
 
 == Installation ==
