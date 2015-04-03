@@ -33,4 +33,7 @@ Once install you can find a new menu on left side with name Dynamic Contact Info
 
 2. This will show you the actuall plugin with shortcodes.
 
+== Changelog ==
 
+= 1.1 =
+* A Change In Author Info
