@@ -48,3 +48,8 @@ Once install you can find a new menu on left side with name Dynamic Contact Info
 
 = 1.4 =
 * Changes in UI.
+
+== Upgrade Notice  ==
+
+= 1.4 =
+* Upgrade to new UI.
