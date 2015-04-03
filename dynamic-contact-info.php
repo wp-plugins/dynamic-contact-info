@@ -6,7 +6,7 @@ Description:This plugin will make your site's contact info dynamic even if your 
 
 Author:Sukhchain Singh
 
-Author URI:http://www.sukhchain.co
+Author URI:http://www.sukhchain.tk
 
 
 Version:1.1
