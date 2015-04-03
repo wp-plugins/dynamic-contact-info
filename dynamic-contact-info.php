@@ -16,7 +16,7 @@ define('DCINAME','DynamicContactInfo');
 add_action('admin_menu','con_nav');
 function con_nav()
 {
-	add_menu_page('Dynamic Contact Info','Dynamic Contact Info','manage_options','dynamic-contact-details','con_de_fun','',2000);
+	add_menu_page('Dynamic Contact Info','Dynamic Contact Info','manage_options','dynamic-contact-details','con_de_fun',plugins_url().'/dynamic-contact-info/img/menu.png',2000);
 }
 function con_de_fun()
 {
