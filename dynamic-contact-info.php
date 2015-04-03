@@ -21,7 +21,7 @@ function con_nav()
 function con_de_fun()
 {
 	
-	$FieldsArr=array('tel'=>'Telephone','email'=>'Email','fax'=>'Fax','mobile'=>'Mobile','addr-1'=>'Address Line 1','addr-2'=>'Address Line 2','country'=>'Country','postcode'=>'Postcode');
+	$FieldsArr=array('tel'=>'Telephone','email'=>'Email','fax'=>'Fax','mobile'=>'Mobile','addr-1'=>'Address Line 1','addr-2'=>'Address Line 2','country'=>'Country','state'=>'State','city'=>'City','postcode'=>'Postcode',);
 	echo '<h2>Dynamic Contact Info</h2>';
 	if(isset($_GET['msg']))
 		echo '<div id="message" class="updated below-h2"><p>Record Updated.</p></div>';
