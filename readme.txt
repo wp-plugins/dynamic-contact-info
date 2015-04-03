@@ -18,6 +18,7 @@ License:GPLv2
 
 A simple wordpress plugin which will make your site's contact info dynamic even if your theme does not support dynamic contact info.
 Use shortcode [DCI tel], [DCI mobile] to display contact info. Now you can add your own custom fields with this plugin.
+You can use the shortcodes in your pages, posts, widgets etc to display custom info.
 
 * MU Compatible
 * Dynamic Contact Info including telephone, email, fax, mobile, address, postcode etc
