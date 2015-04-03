@@ -43,7 +43,11 @@ function con_de_fun()
 	}
 	$FieldsArr=array('tel'=>'Telephone','email'=>'Email','fax'=>'Fax','mobile'=>'Mobile','addr-1'=>'Address Line 1','addr-2'=>'Address Line 2','country'=>'Country','state'=>'State','city'=>'City','postcode'=>'Postcode','dob'=>'Date Of Birth');
 		
-	$FieldsArr2=array_merge($FieldsArr,$CustomFlds);
+	if(!empty($CustomFlds))	
+		$FieldsArr2=array_merge($FieldsArr,$CustomFlds);
+	else
+		$FieldsArr2=$FieldsArr;
+		
 	asort($FieldsArr2);
 	
 	if(isset($_GET['edit']))
