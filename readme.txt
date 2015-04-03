@@ -4,7 +4,7 @@ Donate link:
 Tags: dynamic , contact, info, upload, sidebar
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 4.1
+Stable tag: 1.1
 License:GPLv2 
 
 == Installation ==
@@ -33,4 +33,12 @@ Once install you can find a new menu on left side with name Dynamic Contact Info
 
 2. This will show you the actuall plugin with shortcodes.
 
+== Changelog ==
 
+= 1.1 =
+* A Change In Author Info
+
+== Upgrade Notice ==
+
+= 1.1 =
+A minor change in author info.
