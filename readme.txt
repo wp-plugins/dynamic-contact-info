@@ -55,3 +55,8 @@ Once install you can find a new menu on left side with name Dynamic Contact Info
 
 = 1.5 =
 * Added new feature now users can add own custom fields with shortcode.
+
+== Upgrade Notice  ==
+
+= 1.5 =
+* Now users can add their own custom fields with custom shortcode.
