@@ -37,3 +37,8 @@ Once install you can find a new menu on left side with name Dynamic Contact Info
 
 = 1.1 =
 * A Change In Author Info
+
+== Upgrade Notice ==
+
+= 1.1 =
+A minor change in author info.
