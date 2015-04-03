@@ -9,7 +9,7 @@ Author:Sukhchain Singh
 Author URI:http://www.sukhchain.tk
 
 
-Version:1.1
+Version:1.3
 
 */
 define('DCINAME','DynamicContactInfo');
