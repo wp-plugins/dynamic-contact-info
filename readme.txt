@@ -42,3 +42,6 @@ Once install you can find a new menu on left side with name Dynamic Contact Info
 
 = 1.1 =
 A minor change in author info.
+
+= 1.2 =
+Changes in navigation menu.
