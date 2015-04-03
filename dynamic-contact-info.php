@@ -9,7 +9,7 @@ Author:Sukhchain Singh
 Author URI:http://www.sukhchain.tk
 
 
-Version:1.1
+Version:1.3
 
 */
 define('DCINAME','DynamicContactInfo');
@@ -21,7 +21,9 @@ function con_nav()
 function con_de_fun()
 {
 	
-	$FieldsArr=array('tel'=>'Telephone','email'=>'Email','fax'=>'Fax','mobile'=>'Mobile','addr-1'=>'Address Line 1','addr-2'=>'Address Line 2','country'=>'Country','state'=>'State','city'=>'City','postcode'=>'Postcode',);
+	$FieldsArr=array('tel'=>'Telephone','email'=>'Email','fax'=>'Fax','mobile'=>'Mobile','addr-1'=>'Address Line 1','addr-2'=>'Address Line 2','country'=>'Country','state'=>'State','city'=>'City','postcode'=>'Postcode','dob'=>'Date Of Birth');
+	
+	asort($FieldsArr);
 	echo '<h2>Dynamic Contact Info</h2>';
 	if(isset($_GET['msg']))
 		echo '<div id="message" class="updated below-h2"><p>Record Updated.</p></div>';
@@ -36,31 +38,7 @@ function con_de_fun()
 		echo '<li><input type="submit" value="Update" class="button button-primary button-large" style="margin-right: 20px; float: right;"/></li></ul></form>';
 	}
 	elseif(!isset($_GET['edit']))
-	{
-		echo '<table class="wp-list-table widefat fixed posts">
-				<thead>
-				<tr>
-					<th>Field</th>
-					<th>Value</th>
-					<th>Shortcode</th>
-					<th>Action</th>
-				</tr>
-				</thead>
-				<tbody>';
-		foreach($FieldsArr as $k=>$v)
-		{
-			$Opt=get_option('DynamicContactInfo_'.$k,true);
-			$Opt=($Opt==1) ? '' : $Opt;
-			echo '<tr>
-					<td>'.$v.'</td>
-					<td>'.$Opt.'</td>
-					<td><code>[DynamicContactInfo '.$k.']</code></td>
-					<td><a href="admin.php?page=dynamic-contact-details&edit='.$k.'">Edit</a></td>
-				</tr>';
-		}		
-		echo '</tbody>
-			</table>';
-	}
+		require_once 'fields-list.php';
 	if(!empty($_POST))
 	{
 		update_option('DynamicContactInfo_'.$_POST['update_to'],$_POST['update']);
