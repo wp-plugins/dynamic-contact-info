@@ -1,5 +1,5 @@
 === Dynamic Contact Info ===
-Contributors: CodeVilsTech
+Contributors: Sukhchain, CodeVilsTech
 Donate link:
 Tags: dynamic , contact, info, upload, sidebar
 Requires at least: 3.0
