@@ -29,8 +29,8 @@ Once install you can find a new menu on left side with name Dynamic Contact Info
 
 == Screenshots ==
 
-1.This screenshot will show the location of nav menu on left side in your admin panel
+1. This screenshot will show the location of nav menu on left side in your admin panel
 
-2.This will show you the actuall plugin with shortcodes.
+2. This will show you the actuall plugin with shortcodes.
 
 
