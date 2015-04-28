@@ -1,10 +1,10 @@
 === Dynamic Contact Info ===
 Contributors: Sukhchain, CodeVilsTech
-Donate link:
+Donate link:http://www.sukhchain.tk/donate-online/
 Tags: dynamic , contact, info, upload, sidebar
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 1.5
+Stable tag: 1.6
 License:GPLv2 
 
 == Installation ==
@@ -17,8 +17,7 @@ License:GPLv2
 == Description ==
 
 A simple wordpress plugin which will make your site's contact info dynamic even if your theme does not support dynamic contact info.
-Use shortcode [DCI tel], [DCI mobile] and so on to display contact info. Now you can add your own custom fields with this plugin.
-You can use the shortcodes in your pages, posts, widgets etc to display custom info.
+Use shortcode [DCI tel], [DCI mobile] to display contact info. Now you can add your own custom fields with this plugin.
 
 * MU Compatible
 * Dynamic Contact Info including telephone, email, fax, mobile, address, postcode etc
@@ -61,3 +60,6 @@ Once install you can find a new menu on left side with name Dynamic Contact Info
 
 = 1.5 =
 * Now users can add their own custom fields with custom shortcode.
+
+= 1.6 =
+* Fix minor bug with shortcode.

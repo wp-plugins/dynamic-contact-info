@@ -8,6 +8,15 @@
 			<li><input type="submit" value="Save" class="button button-primary button-large" style="margin-right: 20px; float: right;"/></li>
 		</ul>
 	</form>
+	<script>
+	jQuery(function(){
+		jQuery('input[name=fld_name]').keyup(function(){
+			var n=jQuery(this).val();
+			n=n.replace(/ /gi,'-');
+			jQuery('input[name=fld_shortcode]').val(n);
+		});
+	});
+	</script>
 <?php else:?>
 	<h2>Basic Fields&nbsp;<a href="admin.php?page=dynamic-contact-details&act=add" class="add-new-h2">Add New</a></h2>
 	<table class="wp-list-table widefat fixed posts">
@@ -25,13 +34,14 @@
 		$Cnt=0;
 		foreach($FieldsArr2 as $k=>$v):?>
 		<?php	
+			
 			$Opt=get_option('DynamicContactInfo_'.$k,true);
 			$Opt=($Opt==1) ? '' : $Opt;?>
 			<tr>
 				<td><?php echo $Cnt+1;?></td>
 				<td><?php echo $v?></td>
 				<td><?php echo $Opt?></td>
-				<td><code>[DCI <?php echo $k?>]</code></td>
+				<td><code>[DCI field="<?php echo $k?>"]</code></td>
 				<td>
 					<a href="admin.php?page=dynamic-contact-details&edit=<?php echo $k?>"><img src="<?php echo plugins_url()?>/dynamic-contact-info/img/update.png" alt="Update" title="Update" width="16"/></a>
 					<?php if(!in_array($v,$FieldsArr)):?>
