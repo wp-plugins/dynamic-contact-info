@@ -48,8 +48,11 @@ function con_de_fun()
 		echo '<script>window.location="admin.php?page=dynamic-contact-details&msg=1"</script>';
 	}
 	$FieldsArr=array('tel'=>'Telephone','email'=>'Email','fax'=>'Fax','mobile'=>'Mobile','addr-1'=>'Address Line 1','addr-2'=>'Address Line 2','country'=>'Country','state'=>'State','city'=>'City','postcode'=>'Postcode','dob'=>'Date Of Birth');
-		
-	$FieldsArr2=array_merge($FieldsArr,$CustomFlds);
+	
+	if(!empty($CustomFlds))
+		$FieldsArr2=array_merge($FieldsArr,$CustomFlds);
+	else
+		$FieldsArr2=array_merge($FieldsArr,$CustomFlds);
 	asort($FieldsArr2);
 	
 	if(isset($_GET['edit']))
