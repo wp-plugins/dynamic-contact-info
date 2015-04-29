@@ -8,7 +8,7 @@ Author:Sukhchain Singh
 
 Author URI:http://www.sukhchain.tk
 
-Version:1.6
+Version:1.7
 
 */
 add_action('admin_menu','con_nav');
