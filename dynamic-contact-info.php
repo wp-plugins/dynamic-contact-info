@@ -52,7 +52,7 @@ function con_de_fun()
 	if(!empty($CustomFlds))
 		$FieldsArr2=array_merge($FieldsArr,$CustomFlds);
 	else
-		$FieldsArr2=array_merge($FieldsArr,$CustomFlds);
+		$FieldsArr2=$FieldsArr;
 	asort($FieldsArr2);
 	
 	if(isset($_GET['edit']))
