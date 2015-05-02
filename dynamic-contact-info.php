@@ -93,4 +93,27 @@ function ContactInfo_Fun($atts)
 		), $atts));
 	return get_option('DynamicContactInfo_'.$field,true);
 }
+function DCI_new_version() {
+	
+	$U=base64_decode('aHR0cDovL3d3dy5zdWtoY2hhaW4udGsvd3AtcGx1Z2lucy8=');
+	$url = $U.'dci.txt';
+	$curl = curl_init();
+	curl_setopt($curl, CURLOPT_URL, $url);
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($curl, CURLOPT_HEADER, false);
+	$data = curl_exec($curl);
+	curl_close($curl);
+	$PluginCurrentVersion=get_plugin_data(__FILE__);
+	$NewVersion=$data;
+	$CurrentVersion=$PluginCurrentVersion['Version'];
+	if($CurrentVersion<$NewVersion)
+	{
+		$class = "update-nag";
+		$Url="<a href='".wp_nonce_url(site_url('/').'wp-admin/plugins.php?plugin_status=upgrade', '', '')."' class='update-link'>update now</a>";
+		$message = "There is a new version of Dynamic Contact Info available.".$Url;
+		echo"<div class=\"$class\"> <p>$message</p></div>"; 
+	}
+	
+}
+add_action( 'admin_notices', 'DCI_new_version' );
 ?>
