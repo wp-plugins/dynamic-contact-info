@@ -22,7 +22,7 @@
 	<table class="wp-list-table widefat fixed posts">
 		<thead>
 			<tr>
-				<th width="3%">#</th>
+				<th width="5%">&nbsp;#&nbsp;</th>
 				<th>Field</th>
 				<th>Value</th>
 				<th>Shortcode</th>

@@ -4,7 +4,7 @@ Donate link:http://www.sukhchain.tk/donate-online/
 Tags: dynamic , contact, info, upload, sidebar
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 1.7
+Stable tag: 1.8
 License:GPLv2 
 
 == Installation ==
@@ -66,3 +66,6 @@ Once install you can find a new menu on left side with name Dynamic Contact Info
 
 = 1.7 =
 * Urgent Bug Fix.
+
+= 1.8 =
+* Urgent Bug Fix With Custom Fields.

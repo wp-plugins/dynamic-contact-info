@@ -72,7 +72,9 @@ function con_de_fun()
 		{
 			$CustomFlds1=get_option('DynamicContactInfoCustomFields');
 			$CustomFlds=array($_POST['fld_shortcode']=>$_POST['fld_name']);
-			$SaveIt=array_merge($CustomFlds1,$CustomFlds);
+			$SaveIt=$CustomFlds;
+			if(is_array($CustomFlds1))
+				$SaveIt=array_merge($CustomFlds1,$CustomFlds);
 			update_option('DynamicContactInfoCustomFields',$SaveIt);
 			update_option('DynamicContactInfo_'.$_POST['fld_shortcode'],$_POST['fld_val']);
 		}
